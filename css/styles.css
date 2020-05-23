@@ -1,28 +1,35 @@
-.contenedor {}
+.contenainer-cards {
+    display: flex;
+}
 
 .fondo {
     display: flex;
     padding: 100px;
-    background: url(../imagenes/portada.jpg)no-repeat fixed center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    justify-content: center;
+    background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)), url(../imagenes/portada.jpg);
     background-size: cover;
-    -webkit-filter: contrast(50%);
-    filter: contrast(50%);
-    width: 100%;
 }
 
-.video {
-    flex: 60%;
-    padding-right: 30px;
+.video2 {
+    min-width: 500px;   
 }
 
-.descripcion {
-    flex: 40%;
-    margin: auto;
+.row { 
+    flex-flow: row;
+    align-items: center;
+    display: flex;
 }
 
-.video && .descripcion:::before {
-    opacity: 1;
+.col-8 {
+    flex: 150rem;
+}
+
+.col-4 {
+    flex: 82rem;
+    padding: 2rem;
+}
+
+iframe {
+    min-width: 37rem;
+    min-height: 25rem;
 }
